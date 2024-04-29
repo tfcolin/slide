@@ -53,9 +53,9 @@ clean:
 
 install:
 	install -Dm644 $(OBJLIB) -t $(PREFIX)/lib/
+	install -Dm644 $(SOFTNAME).h -t $(PREFIX)/include/
 
-install_all:
-	install -Dm644 $(OBJLIB) -t $(PREFIX)/lib/
+install_test: 
 	install -Dm755 $(TESTS) -t $(PREFIX)/bin/
 
 .PHONY: all clean install install_all

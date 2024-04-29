@@ -28,7 +28,9 @@ pkg-config
 ArchLinux 用户可通过 AUR 安装:
 
 软件包名称: slidegame
+
 规则引擎安装位置: /usr/lib/libsp.a
+规则引擎头文件安装位置: /usr/include/sp.h
 前端程序安装位置: /usr/bin/{sp_cs,sp_gtk}
 文档安装位置: /usr/share/doc/slidegame/slide.pdf
 
