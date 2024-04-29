@@ -8,21 +8,16 @@
 2) ncurses 的前端
 3) gtk3 的前端
 
-编译运行方法为:
-
-1) 游戏规则引擎 (无法直接运行)
+编译:
 make
 
-2) 基于 ncurses 的前端
-make sp_cs
-./sp_cs
+游戏规则引擎: libsp.a
+基于 ncurses 的前端: sp_cs
 
 h, j, k, l: 移动坐标
 q: 退出.
 
-3) 基于 gtk3 的前端
-make sp_gtk
-./sp_gtk
+基于 gtk3 的前端: sp_gtk
 
 依赖:
 
@@ -30,4 +25,10 @@ ncurses
 gtk3
 pkg-config
 
-archlinux AUR: slidegame
+ArchLinux 用户可通过 AUR 安装:
+
+软件包名称: slidegame
+规则引擎安装位置: /usr/lib/libsp.a
+前端程序安装位置: /usr/bin/{sp_cs,sp_gtk}
+文档安装位置: /usr/share/doc/slidegame/slide.pdf
+
