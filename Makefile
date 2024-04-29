@@ -58,5 +58,5 @@ install:
 install_test: 
 	install -Dm755 $(TESTS) -t $(PREFIX)/bin/
 
-.PHONY: all clean install install_all
+.PHONY: all clean install install_test
 
